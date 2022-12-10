@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="My App" icon="" />
+    <StackLayout class="p-4" height="100%" swipe="reload">
+        <Label text="{{title}}" class="text-3xl text-center" />
+        <ListView id="listView" items="{{items}}" itemTap="remove" separatorColor="gray" rowHeight="50">
+            <ListView.itemTemplate>
+                <StackLayout class="list-group-item">
+                    <Label text="{{description || 'Downloading...'}}" textWrap="true" class="title" />
+                </StackLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+</Page>
