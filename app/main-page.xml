@@ -9,5 +9,9 @@
                 </StackLayout>
             </ListView.itemTemplate>
         </ListView>
+        <StackLayout id="newTask" orientation="horizontal">
+            <TextField hint="Enter new Task" width="200" text="{{new_task}}"/>
+            <Button text="+" tap="add_task" />
+        </StackLayout>
     </StackLayout>
 </Page>

@@ -1,5 +1,6 @@
 import {
   EventData,
+  GestureEventData,
   Page,
   SwipeDirection,
   SwipeGestureEventData,
@@ -26,4 +27,9 @@ export function reload(args: SwipeGestureEventData) {
   if (args.direction === SwipeDirection.down) {
     model.reset();
   }
+}
+
+export function add_task(args: GestureEventData) {
+  console.log('Main Page: Add Task');
+  model.addtask();
 }
